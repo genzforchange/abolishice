@@ -1,0 +1,178 @@
+/* ─── Fonts & Reset ───────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  line-height: 1.5;
+  color: #231f20;
+  background: #f8f7f3;
+}
+
+/* ─── Header ─────────────────────────────────────── */
+.secondary-header {
+  position: relative;
+  height: 120px;
+}
+
+a.back-link {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-family: "Anton SC", sans-serif;
+  font-size: 1.3rem;
+  color: #f8f7f3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.bullhorn {
+  width: 150px;
+  margin: 75px 0 0 100px;
+}
+
+/* ─── Hero ───────────────────────────────────────── */
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: -120px;
+  color: #f8f7f3;
+}
+
+.hero h1 {
+  font-family: "Anton SC", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.hero .lead {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+/* purple background */
+.purple {
+  background: linear-gradient(
+      rgba(73, 74, 110, 0.5),
+      rgba(73, 74, 110, 0.5)
+    ),
+    url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/PurpleBackground.png?v=1745193649120")
+      no-repeat center/cover;
+}
+
+/* ─── Card ───────────────────────────────────────── */
+.card {
+  background: #f8f7f3;
+  max-width: 720px;
+  margin: -2rem auto 3rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 1;
+}
+
+.card h2 {
+  font-family: "Anton SC", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #494a6e;
+  margin-bottom: 1rem;
+}
+
+.letter-body p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #231f20;
+}
+
+/* Signatories */
+.signatories {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.signatories li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1rem;
+}
+
+.signatories li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* ─── Footer ─────────────────────────────────────── */
+footer {
+  background: url("https://cdn.glitch.global/859e2062-945b-4f6d-a3dc-96c31891dcad/AdobeStock_315826297.jpeg?v=1744850684178")
+    no-repeat center/cover;
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+  color: black;
+  margin-top: -2rem;
+}
+
+footer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer a.foot {
+  color: #231f20;
+  text-decoration: underline;
+}
+
+footer img {
+  width: 25%;
+  margin-top: 1rem;
+}
+
+/* ─── Responsive ─────────────────────────────────── */
+@media (max-width: 600px) {
+  .bullhorn {
+    width: 100px;
+    margin-left: 50px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero .lead {
+    font-size: 0.95rem;
+  }
+  .card {
+    margin: -1.5rem 1rem 2rem;
+    padding: 1.5rem;
+  }
+  .card h2 {
+    font-size: 1.5rem;
+  }
+}
+.sign {
+  color: white;
+}
+
+.ref {
+  color: black;
+}
+
+/* a {
+ color: black;
+} */
