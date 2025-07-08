@@ -194,6 +194,33 @@ footer img {
   color: black;
 }
 
-/* a {
- color: black;
-} */
+/* ─── Font weights ───────────────────────────────── */
+body,
+p,
+li,
+.header h4,
+.hero .lead {
+  font-weight: 400; /* body weight */
+}
+
+.hero h1,
+.card h2 {
+  font-weight: 900; /* title weight */
+}
+
+strong,
+b {
+  font-weight: 700; /* bolded weight */
+}
+
+/* ─── Mobile tweaks ──────────────────────────────── */
+@media (max-width: 600px) {
+  .hero h1 {
+    line-height: 2.5rem; /* closer to desktop spacing */
+  }
+
+  footer img {
+    width: 100%;       /* fill the mobile viewport */
+    max-width: none;   /* override desktop constraint */
+  }
+}
